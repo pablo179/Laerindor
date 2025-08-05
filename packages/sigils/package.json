@@ -1,0 +1,26 @@
+{
+    "name": "@laerindor/sigils",
+    "version": "0.0.0",
+    "main": "src/index.js",
+    "types": "src/index.ts",
+    "private": true,
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint . --ext .ts,.tsx --fix",
+        "dev": "tsc -w"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./src/index.ts"
+        },
+        "./*": {
+            "types": "./dist/*.d.ts",
+            "default": "./dist/*.js"
+        }
+    },
+    "dependencies": {
+        "@repo/typescript-config":"",
+        "typescript": "latest"
+    }
+}
