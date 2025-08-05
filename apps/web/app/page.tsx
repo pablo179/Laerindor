@@ -1,11 +1,11 @@
-"use client";
-import { useEffect } from "react";
-import { testingThis } from "@laerindor/sigils";
-import styles from "./page.module.css";
+'use client';
+import { useEffect } from 'react';
+import { testingThis } from '@laerindor/sigils';
+import styles from './page.module.css';
 
 export default function Home() {
   useEffect(() => {
-    testingThis({ title: "Laerindor App" });
+    testingThis({ title: 'Laerindor App' });
   }, []);
   return (
     <div className={styles.page}>

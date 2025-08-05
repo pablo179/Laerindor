@@ -1,26 +1,29 @@
 {
-    "name": "@laerindor/sigils",
-    "version": "0.0.0",
-    "main": "src/index.js",
-    "types": "src/index.ts",
-    "private": true,
-    "scripts": {
-        "build": "tsc",
-        "lint": "eslint . --ext .ts,.tsx --fix",
-        "dev": "tsc -w"
+  "name": "@laerindor/sigils",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "types": "src/index.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts,.tsx",
+    "dev": "tsc -w",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./src/index.ts"
     },
-    "exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "default": "./src/index.ts"
-        },
-        "./*": {
-            "types": "./dist/*.d.ts",
-            "default": "./dist/*.js"
-        }
-    },
-    "dependencies": {
-        "@repo/typescript-config":"",
-        "typescript": "latest"
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*.js"
     }
+  },
+  "dependencies": {
+    "@repo/typescript-config": "",
+    "eslint-plugin-prettier": "^5.5.3",
+    "typescript": "latest"
+  }
 }

@@ -1,0 +1,17 @@
+node_modules
+dist
+.next
+coverage
+build
+.vscode-test
+.DS_Store
+*.log
+*.tsbuildinfo
+*.tgz
+*.swp
+*.swo
+*.bak
+*.tmp
+*.md
+package-lock.json
+yarn.lock
