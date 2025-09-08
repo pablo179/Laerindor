@@ -6,24 +6,37 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "lint": "eslint . --ext .ts,.tsx",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:check": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0",
     "dev": "tsc -w",
+    "check-types": "tsc --noEmit",
+    "clean": "rm -rf dist",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "default": "./src/index.ts"
+      "default": "./dist/index.js"
     },
-    "./*": {
-      "types": "./dist/*.d.ts",
-      "default": "./dist/*.js"
-    }
+    "./history": {
+      "types": "./dist/history.d.ts",
+      "default": "./dist/history.js"
+    },
+    "./project": {
+      "types": "./dist/project.d.ts",
+      "default": "./dist/project.js"
+    },
+    "./history.css": "./src/history.css",
+    "./project.css": "./src/project.css"
   },
+  "sideEffects": [
+    "**/*.css"
+  ],
   "dependencies": {
     "@repo/typescript-config": "",
     "eslint-plugin-prettier": "^5.5.3",
-    "typescript": "latest"
+    "typescript": "5.8.3"
   }
 }

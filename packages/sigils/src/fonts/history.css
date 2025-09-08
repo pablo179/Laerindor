@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Bellefair';
+    font-weight: 400;
+    font-display: swap;
+    src: url("./Bellefair/Bellefair-Regular.ttf") format("woff2");
+}
+
+@font-face {
+    font-family: 'CrimsonText';
+    font-weight: 400;
+    font-display: swap;
+    src: url("./Crimson_Text/CrimsonText-Regular.ttf") format("woff2");
+}
+
+@font-face {
+    font-family: 'CrimsonText';
+    font-weight: 700;
+    font-display: swap;
+    src: url("./Crimson_Text/CrimsonText-Bold.ttf") format("woff2");
+}
+
+@font-face {
+    font-family: 'CrimsonText';
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    src: url("./Crimson_Text/CrimsonText-Italic.ttf") format("wottf2");
+}

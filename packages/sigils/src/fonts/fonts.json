@@ -1,0 +1,20 @@
+{
+    "families": {
+        "history": {
+            "titles": "CrimsonText",
+            "content": "Bellefair"
+        },
+        "project": {
+            "titles": "Quicksand",
+            "content": "Lato"
+        }
+    },
+    "weights": {
+        "regular": 400,
+        "bold": 700
+    },
+    "styles": {
+        "normal": "normal",
+        "italic": "italic"
+    }
+}

@@ -1,0 +1,39 @@
+main {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: 'Quicksand';
+}
+
+button {
+  background-color: var(--color-project-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: background-color 0.3s ease;
+  height: auto;
+  font-family: 'Mplus', sans-serif;
+}
+
+input, textarea {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-family: 'Mplus', sans-serif;
+}
